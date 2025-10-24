@@ -1,0 +1,21 @@
+# ninja log v7
+3	92	1761330340837498899	CMakeFiles/demo.dir/classes/Square.cpp.o	4cc626082fb515fa
+2	94	1761330340836945189	CMakeFiles/demo.dir/classes/BitHolder.cpp.o	aab2d22a8fd7703
+2	131	1761330340836635689	CMakeFiles/demo.dir/classes/Bit.cpp.o	40ab4b7e1844d076
+94	203	1761330340929020606	CMakeFiles/demo.dir/main_macos.cpp.o	8976d275ce6dd79f
+92	224	1761330340926927644	CMakeFiles/demo.dir/imgui/imgui_impl_opengl3.cpp.o	1472381b3cdcf7df
+2	285	1761330340836197854	CMakeFiles/demo.dir/imgui/imgui_tables.cpp.o	51c007349e58b07d
+1	371	1761330340835975396	CMakeFiles/demo.dir/imgui/imgui_demo.cpp.o	fda1199faf262355
+1	392	1761330340836091438	CMakeFiles/demo.dir/imgui/imgui_draw.cpp.o	b1a7927c19382332
+3	420	1761330340838059775	CMakeFiles/demo.dir/classes/ChessSquare.cpp.o	77dd208620ba0f0a
+2	491	1761330340836298605	CMakeFiles/demo.dir/imgui/imgui_widgets.cpp.o	88c0cb0d27d91707
+132	581	1761330340966344423	CMakeFiles/demo.dir/imgui/imgui_impl_glfw.cpp.o	adabb944b8718941
+2	633	1761330340836405521	CMakeFiles/demo.dir/imgui/imgui.cpp.o	be597c30198a1852
+4	670	1761330340838978068	CMakeFiles/demo.dir/classes/Grid.cpp.o	c3f2b2f95beec6a2
+1	698	1761330340835736645	CMakeFiles/demo.dir/Application.cpp.o	8259af312a0e6ccf
+3	705	1761330340837368273	CMakeFiles/demo.dir/classes/Sprite.cpp.o	40d13ec34763ed8d
+5	814	1761330340839378110	CMakeFiles/demo.dir/classes/TicTacToe.cpp.o	be71944a6bb73953
+6	819	1761330340840164153	CMakeFiles/demo.dir/classes/Checkers.cpp.o	b3502616d2af87d7
+3	855	1761330340837197856	CMakeFiles/demo.dir/classes/Game.cpp.o	2603cd448f2a8453
+7	894	1761330340841343072	CMakeFiles/demo.dir/classes/Othello.cpp.o	924cfa62fd17c947
+894	946	1761330341728842719	demo	6fd581d1851157a4
