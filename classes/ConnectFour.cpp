@@ -67,26 +67,6 @@ bool ConnectFour::actionForEmptyHolder(BitHolder &holder)
 
 bool ConnectFour::UpdatePeiceDropXY(int x, int &y)
 {
-    //checking thorugh grid states
-
-
-    // ChessSquare* CurrentSquare = _grid->getSquare(x, y);
-    // int emptyRow = -1;
-    // if (!CurrentSquare->bit()) return;
-    // for (int col = 5; col >= y; col--)
-    // {
-    //     if (!_grid->getSquare(x, col)->bit())
-    //     {
-    //         emptyRow = col;
-    //         break;
-    //     }
-    // }   
-
-    // if (emptyRow < 0) return; 
-    // y = emptyRow;
-
-
-    //checking thourgh player states
 
     uint64_t fullBoard = p1State | p2State;
     fullBoard >>= (7 - x);
@@ -230,9 +210,13 @@ void ConnectFour::setStateString(const std::string &s)
         int playerNumber = s[index] - '0';
         if (playerNumber) {
             square->setBit( PieceForPlayer(playerNumber-1) );
+            int bitPosition = 47 - (8 * y + x);
+            if (playerNumber - 1) p2State |= (1ULL << bitPosition);
+            else p1State |= (1ULL << bitPosition);
         } else {
             square->setBit( nullptr );
         }
+
     });
 }
 
@@ -246,9 +230,9 @@ void ConnectFour::updateAI()
 {
 
     if (gameOver) return;
-    int bestVal = -1000;
-    BitHolder* bestMove = nullptr;
-    std::string state = stateString();
+    // int bestVal = -1000;
+    // BitHolder* bestMove = nullptr;
+    // std::string state = stateString();
 
     // // Traverse all cells, evaluate minimax function for all empty cells
     // _grid->forEachSquare([&](ChessSquare* square, int x, int y) {
