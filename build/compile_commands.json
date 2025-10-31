@@ -97,6 +97,12 @@
 },
 {
   "directory": "/Users/michaelxi/Projects/CMPM123/ConnectFour/build",
+  "command": "/usr/bin/clang++ -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/demo.dir/classes/ConnectFour.cpp.o -c /Users/michaelxi/Projects/CMPM123/ConnectFour/classes/ConnectFour.cpp",
+  "file": "/Users/michaelxi/Projects/CMPM123/ConnectFour/classes/ConnectFour.cpp",
+  "output": "CMakeFiles/demo.dir/classes/ConnectFour.cpp.o"
+},
+{
+  "directory": "/Users/michaelxi/Projects/CMPM123/ConnectFour/build",
   "command": "/usr/bin/clang++ -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/demo.dir/imgui/imgui_impl_opengl3.cpp.o -c /Users/michaelxi/Projects/CMPM123/ConnectFour/imgui/imgui_impl_opengl3.cpp",
   "file": "/Users/michaelxi/Projects/CMPM123/ConnectFour/imgui/imgui_impl_opengl3.cpp",
   "output": "CMakeFiles/demo.dir/imgui/imgui_impl_opengl3.cpp.o"
