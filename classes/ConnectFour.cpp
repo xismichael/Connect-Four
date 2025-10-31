@@ -266,7 +266,7 @@ void ConnectFour::updateAI()
 
     int bestX = -1;
     int curBest = -2147483647;
-    for (int i = 0; i < 7; i++) {
+    for (int i: moveOrder) {
         int y = 0;
         if (UpdatePeiceDropXY(i,y)) {
             int bitPosition = 47 - (8 * y + i);
@@ -321,16 +321,16 @@ int ConnectFour::NegaMax(int playerNumber, int alpha, int beta, int depth)
     if ((p1State ^ p2State) == 0x0000FEFEFEFEFEFEULL) return 0;
     //check winner
     int winner = NegaMaxCheckForWinner();
-    if (winner == (playerNumber)) return 2147483646;
-    if (winner == ((playerNumber % 2) + 1)) return -2147483646;
+    if (winner == (playerNumber)) return 1000000;
+    if (winner == ((playerNumber % 2) + 1)) return -1000000;
     //check for depth// 6 for now
-    if (depth == 10) return EvaluationFunction(playerNumber);
+    if (depth == 12) return EvaluationFunction(playerNumber);
 
     int curBest = -2147483647;
     uint64_t *currentPlayerState;
     if (playerNumber == 1) currentPlayerState = &p1State;
     else currentPlayerState = &p2State;
-    for (int i = 0; i < 7; i++) {
+    for (int i: moveOrder) {
         int y = 0;
         if (UpdatePeiceDropXY(i,y)) {
             int bitPosition = 47 - (8 * y + i);
@@ -360,7 +360,7 @@ int ConnectFour::EvaluationFunction(int currentPlayer)
     //2 empty + 2 of mine = 10
     //3 empty + 1 empty = 100
 
-    int scoring[5] = {0,1,10,100, 10000000};
+    int scoring[5] = {0,1,10,100, 1000000};
 
     int p1Score = 0;
     int p2Score = 0;

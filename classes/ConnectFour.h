@@ -35,6 +35,7 @@ class ConnectFour : public Game
         //represented as 48 bits
         u_int64_t p1State;
         u_int64_t p2State;
+        int moveOrder[7] = {3, 2, 4, 1, 5, 6, 0};
 
         bool gameOver;
 };
